@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:08.460
+Let's take a look as a packaging command we're running to pack a Spring Boot application.
+
+00:00:08.460 --> 00:00:15.179
+So let's try to use Maven Plugin to package our application.
+
+00:00:15.179 --> 00:00:22.094
+So the package command actually runs a test first before generating a snapshot.
+
+00:00:22.094 --> 00:00:25.500
+Before that, we want a clean build.
+
+00:00:25.500 --> 00:00:31.509
+So we do a clean to remove the target we generate before.
+
+00:00:32.149 --> 00:00:37.394
+We have a unit tests for our Spring Boot application here,
+
+00:00:37.395 --> 00:00:41.410
+and I'm making that fail so that you can see the process our
+
+00:00:41.409 --> 00:00:46.569
+packaging if in case of unit test failure.
+
+00:00:46.570 --> 00:00:50.579
+So let's run it. Let's run the package.
+
+00:00:52.119 --> 00:00:58.879
+So you can see the test is running first before we even generate the snapshot.
+
+00:00:58.880 --> 00:01:02.750
+So we run the packaging command and we have
+
+00:01:02.750 --> 00:01:07.409
+one failure in our unit tests as you can see over here.
+
+00:01:09.310 --> 00:01:13.924
+So the snapshot is now generated because the process
+
+00:01:13.924 --> 00:01:18.185
+is stopped if there's failure in the unit test.
+
+00:01:18.185 --> 00:01:22.600
+So let's fix our unit test and try it again.
+
+00:01:22.599 --> 00:01:27.574
+So again, we want to do a clean packaging.
+
+00:01:27.575 --> 00:01:31.865
+So we run a clean combat first.
+
+00:01:31.864 --> 00:01:35.759
+So let's try to package the command again.
+
+00:01:38.930 --> 00:01:41.050
+So as you can see,
+
+00:01:41.049 --> 00:01:46.849
+the test is running and there is no failure and big success,
+
+00:01:46.849 --> 00:01:52.359
+and you will see a snapshot generated for our application.
+
+00:01:52.760 --> 00:01:55.840
+That's it for the packaging.
+
+00:01:55.840 --> 00:02:01.299
+In the next video, I'm going to show you how to run the snapshot.
+
