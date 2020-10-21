@@ -1,0 +1,382 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.708
+This nested loop configuration,
+
+00:00:02.708 --> 00:00:04.530
+this smaller loop inside,
+
+00:00:04.530 --> 00:00:08.039
+is usually referred to as the inner loop.
+
+00:00:08.039 --> 00:00:10.634
+Every time this outer loop steps inside,
+
+00:00:10.634 --> 00:00:14.625
+it would restart this inner loop's counter to zero again,
+
+00:00:14.625 --> 00:00:16.320
+forcing it to print this, "Hi!"
+
+00:00:16.320 --> 00:00:20.730
+message three times, which means this outer loop would cause
+
+00:00:20.730 --> 00:00:26.365
+this message to be repeated three times again and again, three consecutive times.
+
+00:00:26.364 --> 00:00:30.144
+That's why this message would be printed out nine times in total.
+
+00:00:30.144 --> 00:00:33.149
+But let's trace this program step-by-step and
+
+00:00:33.149 --> 00:00:36.839
+watch our variables i and j change as we go.
+
+00:00:36.840 --> 00:00:38.810
+Starting with the outer loop,
+
+00:00:38.810 --> 00:00:40.202
+i is initialized to zero,
+
+00:00:40.201 --> 00:00:42.640
+setting its value to zero and then
+
+00:00:42.640 --> 00:00:46.420
+the next thing that happens is we check if i is less than three.
+
+00:00:46.420 --> 00:00:47.950
+In this case it is,
+
+00:00:47.950 --> 00:00:51.635
+so it steps inside and goes into this inner loop.
+
+00:00:51.634 --> 00:00:55.475
+What happens now is that j gets initialized to zero, getting that value,
+
+00:00:55.475 --> 00:00:58.060
+and then we check if j is less than three,
+
+00:00:58.060 --> 00:01:01.437
+which it is, so we step inside the inner loop,
+
+00:01:01.436 --> 00:01:03.003
+printing out the statement, "Hi!".
+
+00:01:03.003 --> 00:01:07.105
+And then we reach the end of the inner loop, so we go back up,
+
+00:01:07.105 --> 00:01:10.359
+and check and increment j by one,
+
+00:01:10.359 --> 00:01:13.194
+changing its value from zero to one.
+
+00:01:13.194 --> 00:01:15.009
+And then once we increment it,
+
+00:01:15.010 --> 00:01:17.155
+we check that j is still less than three,
+
+00:01:17.155 --> 00:01:18.700
+which in this case it is,
+
+00:01:18.700 --> 00:01:22.704
+so we step inside the loop again and we print out another, "Hi!"
+
+00:01:22.704 --> 00:01:25.004
+or reach the end of the inner loop,
+
+00:01:25.004 --> 00:01:28.810
+so we go back up and add one more to j.
+
+00:01:28.810 --> 00:01:31.870
+Then we check if j is still less than three which it is,
+
+00:01:31.870 --> 00:01:36.290
+so we step inside the loop again and we print out "Hi!", one more time.
+
+00:01:36.290 --> 00:01:38.355
+This time we reached the end of the loop,
+
+00:01:38.355 --> 00:01:40.150
+we go back up and increment by one,
+
+00:01:40.150 --> 00:01:44.800
+making it three, so when we check that j is less than three this time,
+
+00:01:44.799 --> 00:01:46.500
+it's no longer true.
+
+00:01:46.501 --> 00:01:51.995
+So that just jumps all the way to the end of this inner loop and continues from there.
+
+00:01:51.995 --> 00:01:54.390
+And since there's nothing after this inner loop,
+
+00:01:54.390 --> 00:01:56.844
+so we reach this closing bracket of the outer loop,
+
+00:01:56.844 --> 00:02:00.079
+which means we go back up and we increment i this time,
+
+00:02:00.079 --> 00:02:02.620
+i changes from zero to one.
+
+00:02:02.620 --> 00:02:06.865
+So, we check if i is still less than three,which it is in that case,
+
+00:02:06.864 --> 00:02:09.840
+and that means we step into that loop.
+
+00:02:09.840 --> 00:02:12.170
+Now that we've stepped into this outer loop,
+
+00:02:12.169 --> 00:02:14.174
+we see this inner loop all over again,
+
+00:02:14.175 --> 00:02:19.330
+so we start from the beginning including the initialization step and j goes back to zero.
+
+00:02:19.330 --> 00:02:21.205
+So we check if j is less than three,
+
+00:02:21.205 --> 00:02:24.225
+which it is and then we start printing again,
+
+00:02:24.224 --> 00:02:26.079
+so "Hi!" gets printed out.
+
+00:02:26.080 --> 00:02:28.893
+And then we reach the closing bracket of the inner loop,
+
+00:02:28.893 --> 00:02:31.375
+so we go back up and increment j,
+
+00:02:31.375 --> 00:02:34.824
+going from zero to one and then checking if it's less than three,
+
+00:02:34.824 --> 00:02:36.569
+which it is, so we print out "Hi!"
+
+00:02:36.569 --> 00:02:40.629
+again and then we end the inner loop again,
+
+00:02:40.629 --> 00:02:42.277
+go back up, increment it to two,
+
+00:02:42.277 --> 00:02:44.469
+check if it's less than three,
+
+00:02:44.469 --> 00:02:46.210
+which it is, so we print out"Hi!"
+
+00:02:46.210 --> 00:02:52.030
+again. And then we repeat this until we get j++ to make our value three,
+
+00:02:52.030 --> 00:02:53.960
+so when we check if j is less than three,
+
+00:02:53.960 --> 00:02:55.219
+which it's not in the case,
+
+00:02:55.219 --> 00:02:59.590
+we don't print anything and we skip to the closing bracket of the inner loop.
+
+00:02:59.590 --> 00:03:02.487
+And then, we move on we don't have anything else to do,
+
+00:03:02.487 --> 00:03:06.759
+so we reach the closing bracket of the outer loop but i is still less than three,
+
+00:03:06.759 --> 00:03:07.974
+so we go back up,
+
+00:03:07.974 --> 00:03:12.939
+we increment i to make it two and we check if i is less than three or not,
+
+00:03:12.939 --> 00:03:14.469
+which in this case it is,
+
+00:03:14.469 --> 00:03:16.490
+so we step into the inner loop again,
+
+00:03:16.491 --> 00:03:19.615
+initializing j again making it zero.
+
+00:03:19.615 --> 00:03:21.828
+And then because zero is less than three,
+
+00:03:21.828 --> 00:03:23.770
+so we start printing all over again.
+
+00:03:23.770 --> 00:03:26.950
+And this would force our inner loop to go over and
+
+00:03:26.949 --> 00:03:30.829
+over its normal cycle and print out "Hi! "
+
+00:03:30.830 --> 00:03:32.230
+three times again.
+
+00:03:32.229 --> 00:03:35.399
+Now after the inner loop reaches the value of three,
+
+00:03:35.400 --> 00:03:39.490
+this condition becomes false and we skip to the end and then we reach
+
+00:03:39.490 --> 00:03:41.980
+the closing bracket of the outer loop and we go back
+
+00:03:41.979 --> 00:03:44.814
+up and increment i making it three this time,
+
+00:03:44.814 --> 00:03:46.772
+which is no longer less than three,
+
+00:03:46.772 --> 00:03:49.518
+so it doesn't even step into this inner loop anymore.
+
+00:03:49.518 --> 00:03:54.490
+And it just simply jumps to the closing bracket of the outer loop and the program ends.
+
+00:03:54.490 --> 00:03:59.414
+Now if you've noticed, i changed from zero to three and every time i had a value,
+
+00:03:59.413 --> 00:04:01.095
+j changed from zero to three.
+
+00:04:01.096 --> 00:04:03.030
+This is the idea of nested loops,
+
+00:04:03.030 --> 00:04:08.330
+where you could use i and j interchangeably inside the inner loop, in many occasions.
+
+00:04:08.330 --> 00:04:10.719
+Let's see how we could use nested loops to
+
+00:04:10.719 --> 00:04:13.479
+navigate through a two-dimensional array, for example.
+
+00:04:13.479 --> 00:04:16.819
+Going back to our two-dimensional grid here,
+
+00:04:16.819 --> 00:04:22.610
+we want to see how we can go through every single number in this two-dimensional array.
+
+00:04:22.610 --> 00:04:26.745
+We already know that if we wanted to go through every item in a single row,
+
+00:04:26.745 --> 00:04:29.449
+we can simply write a loop for that.
+
+00:04:29.449 --> 00:04:30.839
+This loop, for example,
+
+00:04:30.839 --> 00:04:35.914
+would go through every single item in row with index zero,
+
+00:04:35.915 --> 00:04:40.215
+which means it would count all these numbers and because it's adding them to total,
+
+00:04:40.214 --> 00:04:42.104
+now by the end of this loop,
+
+00:04:42.105 --> 00:04:46.754
+we'd have the value of total equal to the sum of the items in that row.
+
+00:04:46.754 --> 00:04:49.064
+If we wanted to add all the other rows,
+
+00:04:49.064 --> 00:04:52.314
+we could simply write a loop for each row.
+
+00:04:52.314 --> 00:04:55.154
+The only difference is the index here,
+
+00:04:55.154 --> 00:04:58.854
+matching the index of the row that we're interested in.
+
+00:04:58.855 --> 00:05:00.305
+So once we run this code,
+
+00:05:00.305 --> 00:05:03.584
+it would go through every single row and then
+
+00:05:03.584 --> 00:05:09.739
+every single item in that row and add them up until we get the total value we want.
+
+00:05:09.740 --> 00:05:14.824
+However if you noticed, all these loops are almost identical except for that index,
+
+00:05:14.824 --> 00:05:17.774
+which happens to change from zero to three.
+
+00:05:17.774 --> 00:05:20.370
+That looks like something we could use a loop for.
+
+00:05:20.370 --> 00:05:22.500
+If we surround one of those loops with
+
+00:05:22.500 --> 00:05:26.327
+another loop and use its loop counter instead of this index,
+
+00:05:26.327 --> 00:05:29.169
+it would do the exact same thing that this code is doing.
+
+00:05:29.170 --> 00:05:32.694
+So if we replace this code with something that looks like this,
+
+00:05:32.694 --> 00:05:35.714
+where we have this nested loop configuration here,
+
+00:05:35.714 --> 00:05:41.199
+one that uses the loop counter i and the other that uses the loop counter j.
+
+00:05:41.199 --> 00:05:45.101
+And if we try to access grades of i and j,
+
+00:05:45.101 --> 00:05:49.349
+this would eventually add all the items in the two-dimensional array.
+
+00:05:49.350 --> 00:05:50.610
+So running this code,
+
+00:05:50.610 --> 00:05:53.160
+the inner loop would go through every single item in
+
+00:05:53.160 --> 00:05:55.620
+a row and then the outer loop would make sure that we
+
+00:05:55.620 --> 00:05:58.199
+switch to the next row and then the inner loop would
+
+00:05:58.199 --> 00:06:00.944
+go through every item in it again and that way,
+
+00:06:00.944 --> 00:06:03.029
+we can guarantee that by the end of the code,
+
+00:06:03.029 --> 00:06:05.939
+we've seen every single item in the grid.
+
+00:06:05.939 --> 00:06:10.110
+And because every time we are adding the grades into our variable total,
+
+00:06:10.110 --> 00:06:12.525
+by the end of this nested loop configuration,
+
+00:06:12.524 --> 00:06:17.964
+total would have the sum of every single number in this two-dimensional array.
+
+00:06:17.964 --> 00:06:20.939
+Perfect. You can do a lot more than just add the numbers.
+
+00:06:20.939 --> 00:06:23.519
+You could, for example, try to find the minimum number and
+
+00:06:23.519 --> 00:06:27.629
+the maximum number in a two-dimensional array using this nested loop configuration.
+
